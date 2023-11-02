@@ -6,8 +6,19 @@ public class BasicMathematicCalculator {
         addition(2,3,6,8);
         multiplication(5);
         divison(100,4);
+        subtraction(300,500);
     }
 
+    static void subtraction(int... numbers){
+        int result=0;
+        if(numbers[0]>numbers[1]){
+            result = numbers[0]-numbers[1];
+            System.out.println("Subraction of two numebrs: "+result);
+        }else{
+            result =numbers[1]-numbers[0];
+            System.out.println("Subtraction of two numbers: "+result);
+        }
+    }
     static void addition(int ... numbers){
         int result = 0;
         for(int i=0;i<numbers.length;i++){
